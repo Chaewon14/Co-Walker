@@ -3,13 +3,39 @@
     <head>
         <meta charset="utf-8">
         <title>Main</title>
+        <style>
+            .header{
+                display: flex;
+                justify-content: space-between;
+            }
+            .gnb{
+                display: flex;
+                font-size: 14px;
+                padding-right: 40px;
+            }
+            .gnb li{
+                padding-left: 20px;
+                list-style: none;
+            }
+        </style>
     </head>
     <body>
-        <gnb> <!-- gnb : 최상단 메뉴바 -->
-            <li>내주변 산책로</li>
-            <li>커뮤니티</li>
-            <li>마이페이지</li>
-        </gnb>
+        <nav class="header">
+            <div class="logo">
+                <a href=""><img src="" alt="logo"></a>
+            </div>
+            <ul class="gnb"> <!-- gnb : 최상단 메뉴바 -->
+                <li>
+                    <a href="" target="_blank">내 주변 산책로</a>
+                </li>
+                <li>
+                    <a href="" target="_blank">커뮤니티</a>
+                </li>
+                <li>
+                    <a href="" target="_blank">마이페이지</a>
+                </li>
+            </ul>
+        </nav>
         <intro>
             <h2 style="text-align: center;">"함께 걷는 산책 라이프"</h2>
         </intro>
