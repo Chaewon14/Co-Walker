@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Post</title>
 
+        <style>
+            body {
+                margin : 20px;
+
+            }
+            /* 댓글 */
+            #comment-input{
+                width : 400px;
+                height :3em;
+            }
+
+            #profile-photo {float : left; padding: 10px;}
+            #text {
+                padding : 10px;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            #submit {        /* 왜.... 버튼이 눌리지 않지*/
+                background-color : rgb(0, 200, 200);
+                font-size : 11px;
+                font-weight : bold;
+                color:  white;
+                padding : 5px 15px;
+                border: none;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <content>
+
+        </content>
+        <photo>
+
+        </photo>
+        <comment>
+            <div id="Comment-Box">
+                <h3>댓글(0)</h3>
+                <hr>
+                <img height="50" id="profile-photo" src="https://www.pngitem.com/pimgs/m/504-5040528_empty-profile-picture-png-transparent-png.png">
+    
+                <div id="text">
+                    <span >오늘도 걸어요</span><br>
+                    <input id="comment-input" placeholder="댓글을 입력해주세요.">
+                    <button type="submit" id="submit">등록</button>
+                </div>
+            </div>
+        </comment>
+        
+    </body>
+</html>
