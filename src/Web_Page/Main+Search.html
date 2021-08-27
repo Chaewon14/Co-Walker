@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Main+Search</title>
+        <style>
+            .header{
+                display: flex;
+                justify-content: space-between;
+            }
+            .gnb{
+                display: flex;
+                font-size: 14px;
+                padding-right: 40px;
+            }
+            .gnb li{
+                padding-left: 20px;
+                list-style: none;
+            }
+
+            All_Search_Section {
+                display : block;
+                border : 2px solid black;
+                width : 1200px;
+                padding : 10px;
+                margin : 0px auto;
+            }
+
+            Cowalkers_Pick {
+                font-weight: bold;
+            }
+
+            .reviews {
+                float: left;
+                padding : 10px;
+
+            }
+
+            .review_sections {
+                display : inline-block;
+
+                border: 2px solid red;
+            }
+
+
+
+            .pic {
+                float : left;
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- title -->
+        <Main_title>
+            <nav class="header">
+                <div class="logo">
+                    <a href=""><img src="" alt="logo"></a>
+                </div>
+                <ul class="gnb"> <!-- gnb : 최상단 메뉴바 -->
+                    <li>
+                        <a href="" target="_blank">내 주변 산책로</a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">커뮤니티</a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">마이페이지</a>
+                    </li>
+                </ul>
+            </nav>
+            <intro>
+                <h2 style="text-align: center;">"함께 걷는 산책 라이프"</h2>
+            </intro>
+            <Main_title>
+                <h1 style="text-align: center;">Co-Walker</h1>
+            </Main_title>
+        </Main_title>
+
+        <!-- 검색창 div 시작 -->
+        <All_Search_Section>
+            <Search>
+                <Search_Bar>
+                    <input type="text" placeholder="검색" name="search">
+                    <input type="button" value="현위치" name="location">
+                    <input type="submit" value="검색">
+                </Search_Bar>
+                <hr>
+                <br>
+             <!-- 검색 클릭 시/검색 전 -->
+                <Recent_Search>
+                    <!-- 최근 검색 -->
+                     <h3>최근 검색</h3>
+        
+                    <!-- 위치 -->
+                    <location>
+                        <span><a href="">제주도</a></span>
+                        <span><a href="">제주도</a></span>
+                        <span><a href="">제주도</a></span> 
+                        <span><a href="">제주도</a></span> 
+                    </location>
+                </Recent_Search>
+                     
+             <!-- 키워드 -->
+                <hr>
+                <Keyword_Hashtags>
+                    <input type="button" value="+">
+                    <Added_Hashtags>
+                        <input type="button" value="편안한">
+                        <input type="button" value="반려동물과">
+                    </Added_Hashtags>
+                    <input sytle="float:right;" type="button" value="지우기">
+                </Keyword_Hashtags>
+                <hr>
+        
+             <!-- 키워드 검색 -->
+                <recommended_Hashtags>
+                    <h2>키워드 추천</h2>
+                    <span>
+                        <span><input type="button" value="편안한"></span>
+                        <span><input type="button" value="반려동물과"></span>
+                        <span><input type="button" value="편안한"></span>
+                        <span><input type="button" value="반려동물과"></span>
+                        <span><input type="button" value="편안한"></span>
+                        <span><input type="button" value="반려동물과"></span>
+                        <span><input type="button" value="편안한"></span>
+                        <span><input type="button" value="반려동물과"></span>
+                        <span><input type="button" value="편안한"></span>
+                        <span><input type="button" value="반려동물과"></span>
+                        <span><input type="button" value="편안한"></span>
+                        <span><input type="button" value="반려동물과"></span>
+                        <span><input type="button" value="편안한"></span>
+                        <span><input type="button" value="반려동물과"></span>
+                        <span><input type="button" value="편안한"></span>
+                        <span><input type="button" value="반려동물과"></span>
+                        <span><input type="button" value="편안한"></span>
+                        <span><input type="button" value="반려동물과"></span>
+                    </span>
+                </recommended_Hashtags>
+
+                <hr>
+                 <!-- 커뮤니티 검색 -->
+                 <!-- 내 주변: 지금 인기 있는 곳 -->
+                <Around_Places>
+                    <h2>내 주변: 지금 인기 있는 곳</h2>
+                    <Around_Places_pics>
+                        <div class="pic">
+                            <input type="image" src="https://via.placeholder.com/250x150.png?text=Co-walker" alt="img" width="250" height="150">
+                        </div>
+                        <div class="pic">
+                            <input type="image" src="https://via.placeholder.com/250x150.png?text=Co-walker" alt="img" width="250" height="150">
+                        </div>
+                        <div class="pic">
+                            <input type="image" src="https://via.placeholder.com/250x150.png?text=Co-walker" alt="img" width="250" height="150">
+                        </div>
+                        <div class="pic">
+                            <input type="image" src="https://via.placeholder.com/250x150.png?text=Co-walker" alt="img" width="250" height="150">
+                        </div>
+    
+                    </Around_Places_pics>
+                </Around_Places>
+    
+                <br>
+                <hr style="clear: left;">
+    
+                <!-- 지역주민들의 pick -->
+                <Cowalkers_Pick>
+                    <h2>지역 주민들의 Pick!</h2>
+                    <Cowalkers_Pick_Pics>
+                        <div class="pic">
+                            <a href="">
+                            <Img src="https://via.placeholder.com/250x150.png?text=Co-walker" alt="img" width="250" height="150">
+                            <p>Text - Double click to edit</p>
+                            </a>
+                        </div>
+        
+                        <div class="pic">
+                            <a href="">
+                            <Img src="https://via.placeholder.com/250x150.png?text=Co-walker" alt="img" width="250" height="150">
+                            <p>Text - Double click to edit</p>
+                            </a>
+                        </div>
+        
+                        <div class="pic">
+                            <a href="">
+                            <Img src="https://via.placeholder.com/250x150.png?text=Co-walker" alt="img" width="250" height="150">
+                            <p>Text - Double click to edit</p>
+                            </a>
+                        </div>
+        
+        
+                        <div class="pic">
+                            <a href="">
+                            <Img src="https://via.placeholder.com/250x150.png?text=Co-walker" alt="img" width="250" height="150">
+                            <p>Text - Double click to edit</p>
+                            </a>
+                        </div>
+        
+                    </Cowalkers_Pick_Pics>
+        
+                </Cowalkers_Pick>
+        
+        
+            </Search>
+    
+            <hr style="clear:left">
+            
+            <!-- 검색 후 -->
+            <After_Search>
+    
+                <!-- 타이틀 -->
+                <div>
+                    <h2>서울 서대문구 **로</h2>
+                    <h1>**학교 앞 벚꽃거리</h1>
+                </div>
+    
+                <!-- 지도 -->
+                <div>
+                    <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/1d1ec40c40fae1dfe8c52470a32018ef3419832d52eaab1c6033a7ac14c8d698" width="638px" height="358px" style="border:1px solid #ccc;"></a>
+                </div>
+                     
+                <br><br><br>
+    
+                <!-- 리뷰 -->
+                <reviews>
+                    <!-- 왼쪽 -->
+                    <left_section_review class="review_sections" style="width: 250px; padding: 10px;">
+                        <input type="image" src="https://via.placeholder.com/250x150.png?text=Co-walker" alt="img" width="250" height="150">
+                        <div><input type="button" value="편안한"></div>
+                        <div><input type="button" value="반려동물과"></div>
+                        <div><input type="button" value="반려동물과"></div>
+                        <p>
+                        그러므로 그들은 이상의 보배를 능히 품으며 그들의 이상은 아름답고 소담스러운 열매를 맺어 우리 인생을 풍부하게 하는 것이다 보라 청춘을 ! 그들의 몸이 얼마나 튼튼하며 그들의 피부가 얼마나 생생한가
+                        </p> 
+                    </left_section_review>
+                    
+                    <!-- 오른쪽 -->
+                    <right_section_review class="review_sections" style="width: 900px;">
+                        <!-- 오른쪽 위 -->
+                        <div id="represented_pics" style="float: left;">
+                            <div class="pic">
+                                <a href="">
+                                <img src="https://via.placeholder.com/200x120.png?text=Co-walker" alt="img" width="200" height="120">
+                                </a>
+                            </div>
+        
+                            <div class="pic">
+                                <a href="">
+                                <img src="https://via.placeholder.com/200x120.png?text=Co-walker" alt="img" width="200" height="120">
+                                </a>
+                            </div>
+        
+                            <div class="pic">
+                                <a href="">
+                                <img src="https://via.placeholder.com/200x120.png?text=Co-walker" alt="img" width="200" height="120">
+                                </a>
+                            </div>
+                            
+                            <div class="pic">
+                                <a href="">
+                                <img src="https://via.placeholder.com/200x120.png?text=Co-walker" alt="img" width="200" height="120">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 오른쪽 아래 -->
+                        <div style="clear:left;">
+                            <select style="display: block; margin: 5px;">
+                                <option selected>최신순</option>
+                                <option>인기순</option>
+                                <option>별점 높은 순</option>
+                                <option>별점 낮은 순</option>
+                            </select>
+                            
+                            <div class="reviews">
+                                <div style="width: 420px; height: 300px; margin: 10px 5px;">
+                                    <a href="">
+                                    <img src="https://via.placeholder.com/200x120.png?text=Co-walker" alt="img" width="200" height="120" style="margin-right: 10px;">
+                                    </a>  
+                                    <a href="">
+                                    <img src="https://via.placeholder.com/200x120.png?text=Co-walker" alt="img" width="200" height="120">
+                                    </a>
+        
+                                    <input type="button" value="Stars" style="display: block; margin: 10px 0;">
+                                    청춘의 피가 뜨거운지라 인간의 동산에는 사랑의 풀이 돋고 이상의 꽃이 피고 희망의 놀이 뜨고 열락의 새가 운다사랑의 풀이 없으면 인간은 사막이다 오아이스도 없는 사막이다 보이는 끝까지 찾아다녀도 목숨이 있는 때까지 방황하여도 보이는
+                                    <br><br>
+                                    
+                                    <span><input type="button" value="편안한"></span>
+                                    <span><input type="button" value="반려동물과"></span>
+                                    <span><input type="button" value="반려동물과"></span>
+                                </div>
+                            </div>
+        
+                            <div class="reviews">
+                                <div style="width: 420px; height: 300px; margin: 10px 5px;">
+                                    <a href="">
+                                    <img src="https://via.placeholder.com/200x120.png?text=Co-walker" alt="img" width="200" height="120" style="margin-right: 10px;">
+                                    </a>  
+                                    <a href="">
+                                    <img src="https://via.placeholder.com/200x120.png?text=Co-walker" alt="img" width="200" height="120">
+                                    </a>
+        
+                                    <input type="button" value="Stars" style="display: block; margin: 10px 0;">
+                                    청춘의 피가 뜨거운지라 인간의 동산에는 사랑의 풀이 돋고 이상의 꽃이 피고 희망의 놀이 뜨고 열락의 새가 운다사랑의 풀이 없으면 인간은 사막이다 오아이스도 없는 사막이다 보이는 끝까지 찾아다녀도 목숨이 있는 때까지 방황하여도 보이는
+                                    <br><br>
+                                    
+                                    <span><input type="button" value="편안한"></span>
+                                    <span><input type="button" value="반려동물과"></span>
+                                    <span><input type="button" value="반려동물과"></span>
+                                </div>
+                            </div>
+        
+                            <div class="reviews">
+                                <div style="width: 420px; height: 300px; margin: 10px 5px;">
+                                    <a href="">
+                                    <img src="https://via.placeholder.com/200x120.png?text=Co-walker" alt="img" width="200" height="120" style="margin-right: 10px;">
+                                    </a>  
+                                    <a href="">
+                                    <img src="https://via.placeholder.com/200x120.png?text=Co-walker" alt="img" width="200" height="120">
+                                    </a>
+        
+                                    <input type="button" value="Stars" style="display: block; margin: 10px 0;">
+                                    청춘의 피가 뜨거운지라 인간의 동산에는 사랑의 풀이 돋고 이상의 꽃이 피고 희망의 놀이 뜨고 열락의 새가 운다사랑의 풀이 없으면 인간은 사막이다 오아이스도 없는 사막이다 보이는 끝까지 찾아다녀도 목숨이 있는 때까지 방황하여도 보이는
+                                    <br><br>
+                                    
+                                    <span><input type="button" value="편안한"></span>
+                                    <span><input type="button" value="반려동물과"></span>
+                                    <span><input type="button" value="반려동물과"></span>
+                                </div>
+                            </div>
+        
+                            <div class="reviews">
+                                <div style="width: 420px; height: 300px; margin: 10px 5px;">
+                                    <a href="">
+                                    <img src="https://via.placeholder.com/200x120.png?text=Co-walker" alt="img" width="200" height="120" style="margin-right: 10px;">
+                                    </a>  
+                                    <a href="">
+                                    <img src="https://via.placeholder.com/200x120.png?text=Co-walker" alt="img" width="200" height="120">
+                                    </a>
+        
+                                    <input type="button" value="Stars" style="display: block; margin: 10px 0;">
+                                    청춘의 피가 뜨거운지라 인간의 동산에는 사랑의 풀이 돋고 이상의 꽃이 피고 희망의 놀이 뜨고 열락의 새가 운다사랑의 풀이 없으면 인간은 사막이다 오아이스도 없는 사막이다 보이는 끝까지 찾아다녀도 목숨이 있는 때까지 방황하여도 보이는
+                                    <br><br>
+                                    
+                                    <span><input type="button" value="편안한"></span>
+                                    <span><input type="button" value="반려동물과"></span>
+                                    <span><input type="button" value="반려동물과"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </right_section_review>
+                </reivews>
+    
+            </After_Search>
+    
+            
+
+        </All_Search_Section>
+
+    </body>
+</html>
