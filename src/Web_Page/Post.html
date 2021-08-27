@@ -5,20 +5,64 @@
         <title>Post</title>
 
         <style>
+            
+            header {
+                margin-bottom : 50px;
+            }
+            header > liked { 
+                position : relative;
+                float : right;
+                text-align : center;
+                top : -70px;
+            }
+
+            #heart-button {   
+                background: url("https://www.clipartmax.com/png/full/8-83002_empty-heart-clip-art-pink-blank-heart-clip-art-large-pink-heart.png") no-repeat;
+                background-size: 50px;
+                background-position: center;
+                height: 50px;
+                width: 60px;
+                border: none;
+                cursor: pointer;
+            }
+            profile {
+                display: block;
+            }
+
+            content {
+                display : block;
+                height : 250px;
+            }
+
+            content > div {
+                padding : 10px 20px;
+                float : right;
+                width : 450px;
+            }
+            content > tag {
+                display : block;
+                padding-left : 10px;
+
+            }
+
             body {
-                margin : 20px;
+                border : 2px solid black;  /* 임시 */
+                width : 700px;
+                padding : 30px;
+                margin : 20px auto;
+                
 
             }
             /* 댓글 */
             #comment-input{
-                width : 400px;
+                width : 500px;
                 height :3em;
             }
 
             #profile-photo {float : left; padding: 10px;}
             #text {
                 padding : 10px;
-                font-size: 12px;
+                font-size: 14px;
                 font-weight: bold;
             }
             #submit {        /* 왜.... 버튼이 눌리지 않지*/
@@ -27,6 +71,7 @@
                 font-weight : bold;
                 color:  white;
                 padding : 5px 15px;
+                margin : 5px;
                 border: none;
             }
 
@@ -34,22 +79,46 @@
     </head>
     <body>
         <header>
+            <h4 style="margin : 0px;">지역주민들의 Pick</h4>
+            <h1 style="margin-top : 10px;">가족들과 주말에 가기좋은 호수공원</h1>
+            <liked>
+                <button id="heart-button"></button><br>
+                <span>143</span>
+            </liked>
+            <profile>
+                <img height="30" style="vertical-align: middle;" src="https://www.pngitem.com/pimgs/m/504-5040528_empty-profile-picture-png-transparent-png.png">
+                <span style="font-weight:bold" >아니한</span>
+            </profile>
+
 
         </header>
         <content>
+            <tag>
+                <input type="button" value="편안한">
+                <input type="button" value="반려동물과">
+            </tag>
 
+            <img style="float : left; padding: 10px;" height="150" src="https://www.generationsforpeace.org/wp-content/uploads/2018/03/empty.jpg">
+
+            <div> 있으랴? 이상! 우리의 청춘이 가장 많이 품고 있는 이상! 이것이야말로 무한한 가치를 가진 것이다 사람은 크고<br>
+                <br>같은 예가 되려니와 그와 같지 못하다 할지라도 창공에 반짝이는 뭇 별과 같이 산야에 피어나는 군영과 같이 이상은 실로 인간의 부패를 방지하는 소금이라 할지니 인생에 가치를 주는 원질이 되는 것이다 그들은
+                앞이 간지라 착목한는 곳이 원대하고 그들은 피가 더운지라 실현에 대한 자신과 용기가<br>
+            </div>
         </content>
+        
         <photo>
+            <img style="display:block; margin:auto;" height="300" src="https://www.generationsforpeace.org/wp-content/uploads/2018/03/empty.jpg">
+
 
         </photo>
         <comment>
             <div id="Comment-Box">
-                <h3>댓글(0)</h3>
+                <h3 style="margin : 15px 10px;" >댓글(0)</h3>
                 <hr>
                 <img height="50" id="profile-photo" src="https://www.pngitem.com/pimgs/m/504-5040528_empty-profile-picture-png-transparent-png.png">
     
                 <div id="text">
-                    <span >오늘도 걸어요</span><br>
+                    <span>오늘도 걸어요</span><br>
                     <input id="comment-input" placeholder="댓글을 입력해주세요.">
                     <button type="submit" id="submit">등록</button>
                 </div>
