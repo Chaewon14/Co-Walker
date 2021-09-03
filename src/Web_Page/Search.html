@@ -6,6 +6,12 @@
 
 
         <style>
+
+            body {
+                padding: 100px;
+            }
+
+
             div {
                 display: inline-block;
             }
@@ -13,6 +19,23 @@
             .pic {
                 float: left;
                 margin: 5px;
+            }
+
+
+            .button1 {
+                width: 50px; 
+                height: 45px;
+            }
+
+            .button2 {
+                width: 100px; 
+                height: 45px;
+            }
+
+            .box {
+                display:block; 
+                background-color: linen;
+                padding: 20px;
             }
         </style>
 
@@ -24,11 +47,12 @@
 
 
         <!-- 검색창 div 시작 -->
-        <div>
+        <div class="box">
+        <div style="padding: 0 335px;">
             
-        <input type="text" placeholder="검색" name="search">
-        <input type="button" value="현위치" name="location">
-        <input type="submit" value="검색">
+        <input type="text" placeholder="검색" name="search" style="width: 350px; height: 40px;">
+        <input type="button" value="현위치" name="location"  style class="button1">
+        <input type="submit" value="검색" style class="button1">
         </div>
         <hr>
 <br>
@@ -47,11 +71,11 @@
             </div>
     <!-- 키워드 -->
                 <hr><div style="display: inline; float:right; "><input type="button" value="지우기"></div>
-                <div><input type="button" value="+"></div>
+                <div><input type="button" value="+" style class="button1"></div>
                 
-                <div><input type="button" value="편안한"></div>
-                <div><input type="button" value="반려동물과"></div>
-            </div>
+                <div><input type="button" value="편안한" style class="button2"></div>
+                <div><input type="button" value="반려동물과" style class="button2"></div>
+            
             <hr>
     <!-- 키워드 검색 -->
             <div>
@@ -59,22 +83,22 @@
 
                 <div>
 
-                <div><input type="button" value="편안한"></div>
-                <div><input type="button" value="반려동물과"></div>
-                <div><input type="button" value="편안한"></div>
-                <div><input type="button" value="반려동물과"></div>
-                <div><input type="button" value="편안한"></div>
-                <div><input type="button" value="반려동물과"></div>
-                <div><input type="button" value="편안한"></div>
-                <div><input type="button" value="반려동물과"></div>
-                <div><input type="button" value="편안한"></div>
-                <div><input type="button" value="반려동물과"></div>
-                <div><input type="button" value="편안한"></div>
-                <div><input type="button" value="반려동물과"></div>
-                <div><input type="button" value="편안한"></div>
-                <div><input type="button" value="반려동물과"></div>
-                <div><input type="button" value="편안한"></div>
-                <div><input type="button" value="반려동물과"></div>
+                <div><input type="button" value="편안한" style class="button2"></div>
+                <div><input type="button" value="반려동물과" style class="button2"></div>
+                <div><input type="button" value="편안한" style class="button2"></div>
+                <div><input type="button" value="반려동물과" style class="button2"></div>
+                <div><input type="button" value="편안한" style class="button2"></div>
+                <div><input type="button" value="반려동물과" style class="button2"></div>
+                <div><input type="button" value="편안한" style class="button2"></div>
+                <div><input type="button" value="반려동물과" style class="button2"></div>
+                <div><input type="button" value="편안한" style class="button2"></div>
+                <div><input type="button" value="반려동물과" style class="button2"></div>
+                <div><input type="button" value="편안한" style class="button2"></div>
+                <div><input type="button" value="반려동물과" style class="button2"></div>
+                <div><input type="button" value="편안한" style class="button2"></div>
+                <div><input type="button" value="반려동물과" style class="button2"></div>
+                <div><input type="button" value="편안한" style class="button2"></div>
+                <div><input type="button" value="반려동물과" style class="button2"></div>
 
                 </div>
 
@@ -140,19 +164,20 @@
                 </div>
 
             </div>
-
+        </div>
 
             <br><br><br><br><br><br>
 <!-- 검색 후 -->
     <!-- 타이틀 -->
+    <div class="box">
             <div style="float: left;">
                 <h2>서울 서대문구 **로</h2>
                 <h1>**학교 앞 벚꽃거리</h1>
             </div>
 
     <!-- 지도 -->
-            <div style="display: block; clear: left;">
-             <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/1d1ec40c40fae1dfe8c52470a32018ef3419832d52eaab1c6033a7ac14c8d698" width="638px" height="358px" style="border:1px solid #ccc;"></a></div>
+            <div style="display: block; clear: left; text-align: center;">
+             <img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/1d1ec40c40fae1dfe8c52470a32018ef3419832d52eaab1c6033a7ac14c8d698" width="800px" height="500px" style="border:1px solid #ccc;"></a></div>
             
 
 
@@ -294,7 +319,7 @@
 
 
         </div>
-
+    </div>
 
 
     </body>
