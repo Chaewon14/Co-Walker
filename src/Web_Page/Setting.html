@@ -2,24 +2,80 @@
 <html lang="ko">
     <head>
         <meta charset="utf-8">
-        <title>Main</title>
+        <title>MyPage</title>
+        <style>
+            Mypage {
+                display : block;
+                background-color: rgb(255, 255, 255);
+                border : 5px solid blue;
+                width : 900px;
+                height : 700px;
+                margin : 40px auto;
+                padding : 20px;
+            }
+            #Mypage_menu ul {
+                list-style-type: none;
+                width: 150px;
+                height: 300px;
+                margin: 30px;
+                padding: 50px;
+                background-color: rgb(192, 192, 192);
+                border-radius: 20%;
+                float : left;
+            }
+            #Mypage_menu li a {
+                display: block;
+                margin: 10px;
+                padding: 5px;
+                text-decoration: none;
+                font-weight: bold;
+                color: black;
+            }
+
+            #MyProfile {
+                width: 470px;
+                margin: 30px;
+                padding: 30px;
+                background-color: rgb(194, 194, 194);
+                float: right;
+            }
+
+            #Profile_text {
+                width : 300px;
+                margin : 10px;
+                padding : 10px 15px;
+            }
+        </style>
     </head>
     <body>
         <Mypage>
-            <Mypage_menu>
-                <My_activity>
-                    <Managing posts></Managing>
-                    <Visited_Place></Visited_Place>
-                </My_activity>
-                <Bookmarks></Bookmarks>
-                <List_of_Co-walkers></List_of_Co-walkers>
-                <Setting></Setting>
-            </Mypage_menu>
-            <MyProfile>
+            <div id="Mypage_menu">
+                <ul>
+                    <li><a href="">1. 내 활동</a></li>
+                    <li><a href="">2. 북마크</a></li>
+                    <li><a href="">3. 친구목록</a></li>
+                    <li><a href="">4. 설정</a></li>
+                </ul>
+
+            </div>
+
+            <div id="MyProfile">
+                <img  style="margin:10px" height="100" id="profile-photo" src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png">
+
+                <div id="Profile_text" style="float: right">
+                    <span style="font-weight: bold;">청춘의 피</span>
+                    <hr>
+                    <div>동력은 바로 이것이다 이성은 투명하되 얼음과 같으며 지혜는 날카로우나 갑 속</div>
+                </div>
+
+                <img  style="margin:10px" height="100" id="SNS_logo" src="https://toppng.com/uploads/preview/facebook-f-icon-facebook-logo-png-white-11563016108d1db9g68rk.png">
+                <img  style="margin:10px" height="100" id="SNS_logo" src="https://www.clipartmax.com/png/middle/174-1749306_instagram-comments-instagram-image-no-background-black-and-white.png">
+                <img  style="margin:10px" height="100" id="SNS_logo" src="https://image.similarpng.com/very-thumbnail/2020/06/Black-icon-Twitter-logo-transparent-PNG.png">
+
                 <Profile_Photo></Profile_Photo>
                 <Profile_text></Profile_text>
                 <SNS></SNS>
-            </MyProfile>
+            </div>
         </Mypage>
     </body>
 </html>
