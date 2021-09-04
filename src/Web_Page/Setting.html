@@ -7,7 +7,7 @@
             Mypage {
                 display : block;
                 background-color: rgb(255, 255, 255);
-                border : 5px solid blue;
+                border : 5px solid rgb(48, 48, 48);
                 width : 900px;
                 height : 700px;
                 margin : 40px auto;
@@ -35,6 +35,7 @@
             #MyProfile {
                 width: 470px;
                 margin: 30px;
+                margin-top: 40px;
                 padding: 30px;
                 background-color: rgb(194, 194, 194);
                 float: right;
@@ -43,8 +44,28 @@
             #Profile_text {
                 width : 300px;
                 margin : 10px;
-                padding : 10px 15px;
+                padding : 10px 0px;
+                padding-left: 15px;
             }
+
+            #SNS_logo{
+                height: 40px;
+                margin: 10px 5px;
+            }
+
+            #follow_follower {
+                width: 280px;
+                float: right;
+                margin: 10px auto;
+                text-align: center;
+            }
+
+            #follow_follower div {
+                width : 100px;
+                float : left;
+                padding : 10px;
+            }
+
         </style>
     </head>
     <body>
@@ -61,21 +82,32 @@
             </div>
 
             <div id="MyProfile">
-                <img  style="margin:10px" height="100" id="profile-photo" src="https://www.pngfind.com/pngs/m/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png">
+                <img  style="margin:10px; margin-left:20px;" height="100" id="profile-photo" src="https://png2.cleanpng.com/sh/68da38eaa8a3c77d87420f55680db54b/L0KzQYm4UsMyN5h3gJH0aYP2gLBuTfNwdaF6jNd7LXnmf7B6TgV0baMyiOR4ZnnvdX73jCJ1aZNxfZ93ZYT6f8PyTfdzaaFtRdVycnPvdX76lvcueJ9sRdtsb36wdsPshb1ld6hzhNHqZD24PYWAUcQud59xgZ8AY0LkQ4m3gcQzPmg2TJCDOEm2R4S3UsE2PGc3T6ICM0C1R4O1kP5o/kisspng-computer-icons-user-profile-portable-network-graph-circle-svg-png-icon-free-download-5-4714-onli-5c2a380a426714.889373021546270730272.png">
 
                 <div id="Profile_text" style="float: right">
-                    <span style="font-weight: bold;">청춘의 피</span>
+                    <span style="font-size: large; font-weight: bold;">청춘의 피</span>
                     <hr>
                     <div>동력은 바로 이것이다 이성은 투명하되 얼음과 같으며 지혜는 날카로우나 갑 속</div>
                 </div>
 
-                <img  style="margin:10px" height="100" id="SNS_logo" src="https://toppng.com/uploads/preview/facebook-f-icon-facebook-logo-png-white-11563016108d1db9g68rk.png">
-                <img  style="margin:10px" height="100" id="SNS_logo" src="https://www.clipartmax.com/png/middle/174-1749306_instagram-comments-instagram-image-no-background-black-and-white.png">
-                <img  style="margin:10px" height="100" id="SNS_logo" src="https://image.similarpng.com/very-thumbnail/2020/06/Black-icon-Twitter-logo-transparent-PNG.png">
+                <div id=SNS style="float: left";>
+                    <img   id="SNS_logo" src="https://png2.cleanpng.com/sh/089f67da5b6ecebe4faf4a141aed5892/L0KzQYm3VcE4N6p2fZH0aYP2gLBuTfNwdaF6jNd7LXnmf7B6TgNwa5pmhJ92ZXTscX7tgfNmapD0g59vYXPocrF2i71qa5DzRadqZnW2dra6gvE2QJI9Rqg5NkGzQoaAUcUzPmc2Sas8OUe5Q4S1kP5o/kisspng-computer-icons-social-media-facebook-facebook-icon-5afe3fe3ba58a8.6061025715266119397633.png">
+                    <img   id="SNS_logo" src="https://png2.cleanpng.com/sh/e15dd9c5fd0b3bbb6ae87440afbf259f/L0KzQYm3VsA3N6RBhJH0aYP2gLBuTfNwdZ56htt9eT3meMPwkCRqaZ8ye9pAcnPrPb32hB8ua5DyiOd9ZYKwebT2jwMua51uRdt3c4SwRbO4VBM1QWdnUdgCOEGxSYK3WME6PGU2TaQDMki3Q4K3V8YyP191htk=/kisspng-community-christian-church-logo-computer-icons-cli-inst-5b17c496b9f781.9108194415282843107617.png">
+                    <img   id="SNS_logo" src="https://png2.cleanpng.com/sh/884073bfabdba9786dc649f4b868490d/L0KzQYm3VMI6N6RBfZH0aYP2gLBuTfxwb5Cye9H2cIX3dcO0ifNwdqQye95ycD3kgsW0VfFmPZNoSdUBOEa8doW1U8Y2Pmo3S6k6NUK4QIG8U8QxPGM8T5D5bne=/kisspng-logo-computer-icons-clip-art-5ae5bc1c6869f4.3656923715250053404277.png">    
+                </div>
 
-                <Profile_Photo></Profile_Photo>
-                <Profile_text></Profile_text>
-                <SNS></SNS>
+                <div id="follow_follower">
+                    <div>
+                        <span style="font-weight: bold;">0</span>
+                        <span>following</span>
+                    </div>
+                    <div>
+                        <span style="font-weight: bold;">100</span>
+                        <span>followers</span>
+                    </div>
+
+                </div>
+
             </div>
         </Mypage>
     </body>
